@@ -7,20 +7,39 @@ describe('i18n', () => {
     instance = new i18n()
   })
 
-  it('sets the language when a prop is passed', () => {
-    expect(instance.language === 'en').toBe(true)
+  describe('#constructor', () => {
+    it('sets the language when a prop is passed', () => {
+      expect(instance.language === 'en').toBeTruthy()
+    })
+
+    it('sets the default language as "en" when no params are given', () => {
+      instance = new i18n('nl')
+      expect(instance.language).toBe('nl')
+    })
+
+    it('triggers an event when the language is changed', () => {
+      const cb = jest.fn()
+
+      instance.on('language-change', cb)
+      instance.language = 'nl'
+
+      expect(cb).toHaveBeenCalledTimes(1)
+      expect(cb).toHaveBeenCalledWith('nl')
+    })
   })
 
-  it('sets the default language as "en" when no params are given', () => {
-    instance = new i18n('nl')
-    expect(instance.language).toBe('nl')
+  describe('#getDOMLocale', () => {
+    it('returns a valid locale from the DOM', () => {
+      const locale = i18n.getDOMLocale().split('-')[0]
+      expect(locale).toBe('en')
+    })
   })
 
-  it('triggers an event when the langauge is changed', () => {
-    const cb = jest.fn()
-
-    instance.on('language-change', cb)
-    instance.language = 'nl'
-    expect(cb).toHaveBeenCalled()
+  describe('#translator', () => {
+    it('throws if no messages are supplied', () => {
+      expect(() => {
+        instance.translator()
+      }).toThrow()
+    })
   })
 })
