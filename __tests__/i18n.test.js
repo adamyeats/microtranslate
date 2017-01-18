@@ -8,11 +8,11 @@ describe('i18n', () => {
   })
 
   describe('#constructor', () => {
-    it('sets the language when a prop is passed', () => {
+    it('sets the default language as "en" when no params are given', () => {
       expect(instance.language === 'en').toBeTruthy()
     })
 
-    it('sets the default language as "en" when no params are given', () => {
+    it('sets the language when a prop is passed', () => {
       instance = new i18n('nl')
       expect(instance.language).toBe('nl')
     })
