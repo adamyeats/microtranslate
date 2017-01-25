@@ -1,7 +1,3 @@
-import i18n from './lib/i18n'
+const i18n = require('./lib/i18n')
 
-if (module && module.exports) {
-  module.exports = i18n
-}
-
-export default i18n
+module.exports = i18n
