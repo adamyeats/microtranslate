@@ -19,5 +19,9 @@
     "build": "gulp"
   },
   "author": "Adam Yeats <ay@xadamy.xyz>",
-  "license": "MIT"
+  "license": "MIT",
+  "jest": {
+    "coverageDirectory": "./coverage/",
+    "collectCoverage": true
+  }
 }

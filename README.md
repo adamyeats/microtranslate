@@ -1,14 +1,14 @@
 tiny-i18n
 =========
 
-[![Build Status](https://travis-ci.org/xadamy/tiny-i18n.svg)](https://travis-ci.org/xadamy/tiny-i18n)
+[![Build Status](https://travis-ci.org/xadamy/tiny-i18n.svg)](https://travis-ci.org/xadamy/tiny-i18n) [![codecov](https://codecov.io/gh/xadamy/tiny-i18n/branch/master/graph/badge.svg)](https://codecov.io/gh/xadamy/tiny-i18n)
 
 ## Installation
 
 For use with Node, install with [NPM](http://npmjs.org):
 
     $ npm install tiny-i18n
-    
+
 ## Usage
 
 ### Instantiation
