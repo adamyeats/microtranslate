@@ -60,7 +60,7 @@ var i18n = function (_EventEmitter) {
     key: 'getDOMLocale',
     value: function getDOMLocale() {
       if (typeof window !== 'undefined' && 'navigator' in window) {
-        return navigator.languages ? navigator.languages[0] : navigator.language || navigator.userLanguage;
+        return navigator.languages && navigator.languages.length > 0 ? navigator.languages[0] : navigator.language || navigator.userLanguage;
       } else {
         return null;
       }
