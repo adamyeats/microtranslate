@@ -1,19 +1,19 @@
-tiny-i18n
+microtranslate
 =========
 
-[![Build Status](https://travis-ci.org/xadamy/tiny-i18n.svg)](https://travis-ci.org/xadamy/tiny-i18n) [![codecov](https://codecov.io/gh/xadamy/tiny-i18n/branch/master/graph/badge.svg)](https://codecov.io/gh/xadamy/tiny-i18n)
+[![Build Status](https://travis-ci.org/xadamy/microtranslate.svg)](https://travis-ci.org/xadamy/microtranslate) [![codecov](https://codecov.io/gh/xadamy/microtranslate/branch/master/graph/badge.svg)](https://codecov.io/gh/xadamy/microtranslate)
 
 ## Why?
 
-`tiny-i18n` was created out of a need to provide localised strings to React components, although it is is not tied to the React ecosystem. It is an Event-emitting ES2015 class that is designed to be the "single source of truth" for the current display language of the React components that are subscribed to it.
+`microtranslate` was created out of a need to provide localised strings to React components, although it is is not tied to the React ecosystem. It is an Event-emitting ES2015 class that is designed to be the "single source of truth" for the current display language of the React components that are subscribed to it.
 
 ## Installation
 
 For use with Node, install with [Yarn](https://yarnpkg.com/) or [NPM](http://npmjs.org):
 
 ```
-$ yarn add tiny-i18n
-$ npm install tiny-i18n
+$ yarn add microtranslate
+$ npm install microtranslate
 ```
 
 ## Usage
@@ -68,7 +68,7 @@ Test are run using [Jest](https://facebook.github.io/jest/). Clone the repo, run
 
 ### Code of Conduct
 
-Please note that this project is released with a [Contributor Code of Conduct](https://github.com/xadamy/tiny-i18n/blob/master/CODE_OF_CONDUCT.md). By participating in this project you agree to abide by its terms.
+Please note that this project is released with a [Contributor Code of Conduct](https://github.com/xadamy/microtranslate/blob/master/CODE_OF_CONDUCT.md). By participating in this project you agree to abide by its terms.
 
 ## Copyright
 

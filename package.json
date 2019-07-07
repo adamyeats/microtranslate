@@ -1,5 +1,5 @@
 {
-  "name": "tiny-i18n",
+  "name": "microtranslate",
   "version": "1.0.0",
   "description": "a very small i18n library because why the hell not",
   "main": "dist/cjs/index.js",
