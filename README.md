@@ -7,32 +7,13 @@ tiny-i18n
 
 `tiny-i18n` was created out of a need to provide localised strings to React components, although it is is not tied to the React ecosystem. It is an Event-emitting ES2015 class that is designed to be the "single source of truth" for the current display language of the React components that are subscribed to it.
 
-At [Lone Rooftop](https://lonerooftop.com), we have a business need to be able to translate React components on-the-fly to either English or Dutch (e.g. via a `<select>` element), without all the features we didn't need of other similar modules, which led to the creation of this library.
-
-In practice, `tiny-i18n` should work very much like what [React in Patterns proposes as a pattern for unidirectional data flow](https://github.com/krasimir/react-in-patterns/tree/master/patterns/one-direction-data-flow) in React apps: an Event Emitter for components to listen for language changes on, e.g. in order to trigger a re-render. It also provides a `Translations` object that provides translated strings from a provided object.
-
-Here's a diagram of how this worked for our particular use case:
-
-```
-Language in URL params
-    ^
-    |
-    v
-  i18n object <-----
-    |              |
-    v              |
-LanguageSwitcher -->
-    ^
-    |
-    |
-User input
-```
-
 ## Installation
 
 For use with Node, install with [NPM](http://npmjs.org):
 
-    $ npm install tiny-i18n
+```
+$ npm install tiny-i18n
+```
 
 ## Usage
 
@@ -73,7 +54,7 @@ Each language key should have an object assigned to it as a value that contains 
 
 ## Running the tests
 
-Test are run using [Jest](https://facebook.github.io/jest/). Clone the repo, run `npm install`, and then `npm run test`.
+Test are run using [Jest](https://facebook.github.io/jest/). Clone the repo, run `yarn install`, and then `yarn test`.
 
 ## Contributing
 
@@ -90,4 +71,4 @@ Please note that this project is released with a [Contributor Code of Conduct](h
 
 ## Copyright
 
-Copyright (c) 2017 Adam Yeats. See LICENSE for details.
+Copyright (c) 2017-2019 Adam Yeats. See LICENSE for details.
