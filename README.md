@@ -9,9 +9,10 @@ tiny-i18n
 
 ## Installation
 
-For use with Node, install with [NPM](http://npmjs.org):
+For use with Node, install with [Yarn](https://yarnpkg.com/) or [NPM](http://npmjs.org):
 
 ```
+$ yarn add tiny-i18n
 $ npm install tiny-i18n
 ```
 
