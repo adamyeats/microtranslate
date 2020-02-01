@@ -1,4 +1,4 @@
-import { TranslationsMap } from "./types";
+import { TranslationsMap } from './types';
 
 export class Translations {
   public language: string;

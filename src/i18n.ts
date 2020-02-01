@@ -1,7 +1,7 @@
 import EventEmitter from 'eventemitter3';
 import { Translations } from './translations';
 
-import { TranslationsMap } from "./types";
+import { TranslationsMap } from './types';
 
 export class i18n extends EventEmitter {
   private _language: string;
