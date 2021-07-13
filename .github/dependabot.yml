@@ -3,9 +3,7 @@ updates:
 - package-ecosystem: npm
   directory: "/"
   schedule:
-    interval: daily
-    time: "09:00"
+    interval: weekly
     timezone: Europe/Amsterdam
-  open-pull-requests-limit: 99
   assignees:
   - xadamy
