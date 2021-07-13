@@ -1,3 +1,4 @@
 *
 !/dist/**/*
+!vendor.d.ts
 *.tsbuildinfo
