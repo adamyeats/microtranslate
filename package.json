@@ -5,7 +5,7 @@
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "dependencies": {
-    "eventemitter3": "^4.0.0"
+    "eventemitter3": "^5.0.0"
   },
   "devDependencies": {
     "@types/jest": "^27.0.1",
